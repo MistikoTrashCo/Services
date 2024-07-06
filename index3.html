@@ -3,54 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mistiko Trash Co - Subscription Plans</title>
+    <title>Mistiko's Trash Co</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            text-align: center;
         }
         .container {
             max-width: 600px;
             margin: auto;
+            text-align: center;
+        }
+        .qr-code {
+            margin: 20px 0;
         }
         .plan {
             margin: 20px 0;
         }
     </style>
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Mistiko's Trash Co</h1>
         <p>Never miss trash day again! We take your bin to the street every week.</p>
         <p>Choose a subscription plan:</p>
-
         <div class="plan">
             <h2>Basic Package</h2>
             <p>Weekly trash bin service (includes tax)</p>
-            <stripe-buy-button
-              buy-button-id="buy_btn_1PZbnM2LYBbn6vskxUHmNm0Q"
-              publishable-key="pk_live_51PZYpx2LYBbn6vskSHUfWpGBttw4hIUaVeuyC8waQqBdmQNhDKF90TMxiWGN7TOEuQBMjFROlhyTBqBmLUWMYji5005SZovLg2">
-            </stripe-buy-button>
+            <a href="https://buy.stripe.com/7sI3d05zq8FbcYU4gi">Subscribe for $40/month</a>
         </div>
-
         <div class="plan">
             <h2>Standard Package</h2>
             <p>Weekly trash bin service + plant watering (includes tax)</p>
-            <stripe-buy-button
-              buy-button-id="buy_btn_1PZbpF2LYBbn6vsk7e9aNGJe"
-              publishable-key="pk_live_51PZYpx2LYBbn6vskSHUfWpGBttw4hIUaVeuyC8waQqBdmQNhDKF90TMxiWGN7TOEuQBMjFROlhyTBqBmLUWMYji5005SZovLg2">
-            </stripe-buy-button>
+            <a href="https://buy.stripe.com/14k00O3ri8Fb0c8eUX">Subscribe for $60/month</a>
         </div>
-
         <div class="plan">
             <h2>Premium Package</h2>
             <p>Weekly trash bin service + plant watering + dog poop removal (includes tax)</p>
-            <stripe-buy-button
-              buy-button-id="buy_btn_1PZaiU2LYBbn6vsk92tujiSY"
-              publishable-key="pk_live_51PZYpx2LYBbn6vskSHUfWpGBttw4hIUaVeuyC8waQqBdmQNhDKF90TMxiWGN7TOEuQBMjFROlhyTBqBmLUWMYji5005SZovLg2">
-            </stripe-buy-button>
+            <a href="https://buy.stripe.com/5kA5l8bXO4oV0c85kk">Subscribe for $90/month</a>
+        </div>
+        <p>Scan the QR code below to make a payment:</p>
+        <div class="qr-code">
+            <img src="YOUR_QR_CODE_URL" alt="QR Code">
         </div>
     </div>
 </body>
