@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mistiko Trash Co - Subscription Plans</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .plan {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .plan h2 {
+            margin-top: 0;
+        }
+        .plan p {
+            margin: 10px 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            .plan {
+                margin: 10px 0;
+                padding: 10px;
+            }
+        }
+    </style>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mistiko Trash Co</h1>
+        <p>Never miss trash day again! We take your bin to the street every week.</p>
+        <p>Choose a subscription plan:</p>
+
+        <div class="plan">
+            <h2>Basic Package</h2>
+            <p>Weekly trash bin service (includes tax)</p>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1PZbnM2LYBbn6vskxUHmNm0Q"
+              publishable-key="pk_live_51PZYpx2LYBbn6vskSHUfWpGBttw4hIUaVeuyC8waQqBdmQNhDKF90TMxiWGN7TOEuQBMjFROlhyTBqBmLUWMYji5005SZovLg2">
+            </stripe-buy-button>
+        </div>
+
+        <div class="plan">
+            <h2>Standard Package</h2>
+            <p>Weekly trash bin service + plant watering (includes tax)</p>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1PZbpF2LYBbn6vsk7e9aNGJe"
+              publishable-key="pk_live_51PZYpx2LYBbn6vskSHUfWpGBttw4hIUaVeuyC8waQqBdmQNhDKF90TMxiWGN7TOEuQBMjFROlhyTBqBmLUWMYji5005SZovLg2">
+            </stripe-buy-button>
+        </div>
+
+        <div class="plan">
+            <h2>Premium Package</h2>
+            <p>Weekly trash bin service + plant watering + dog poop removal (includes tax)</p>
+            <stripe-buy-button
+              buy-button-id="buy_btn_1PZaiU2LYBbn6vsk92tujiSY"
+              publishable-key="pk_live_51PZYpx2LYBbn6vskSHUfWpGBttw4hIUaVeuyC8waQqBdmQNhDKF90TMxiWGN7TOEuQBMjFROlhyTBqBmLUWMYji5005SZovLg2">
+            </stripe-buy-button>
+        </div>
+    </div>
+</body>
+</html>
