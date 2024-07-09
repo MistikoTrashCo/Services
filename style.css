@@ -1,0 +1,39 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Choose a modern font */
+    line-height: 1.6; /* Improve readability */
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 20px auto; /* Center content with some padding */
+    padding: 20px;
+}
+
+/* Section Specific Styling */
+h1, h2, h3 {
+    color: #333; /* Dark gray for headings */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Call to Action */
+#cta {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px;
+    text-align: center;
+}
+
+#cta h2 {
+    color: #007bff; /* Blue for the CTA header */
+}
+s
