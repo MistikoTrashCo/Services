@@ -1,0 +1,67 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Choose a modern font */
+    line-height: 1.6; /* Improve readability */
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 20px auto; /* Center content with some padding */
+    padding: 20px;
+}
+
+/* Section Specific Styling */
+h1, h2, h3 {
+    color: #333; /* Dark gray for headings */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Call to Action */
+#cta {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 30px;
+    text-align: center;
+}
+
+#cta h2 {
+    color: #007bff; /* Blue for the CTA header */
+}
+
+
+/* ... (Previous styles) ... */
+
+/* Animations */
+.benefit {
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly off-screen */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.benefit.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cta-button { /* Basic button styling */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hover effect */
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
